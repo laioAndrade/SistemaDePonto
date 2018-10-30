@@ -227,6 +227,7 @@ body {
     -ms-background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    background-color: #999;
 }
 
 .w3ls-login {
@@ -261,7 +262,7 @@ h1 {
     border-radius: 8px;
     background: transparent;
     padding: 3.5vw;
-    border: solid #fff;
+    border: solid rgb(221, 23, 23);
     border-width: 5px;
     box-sizing: border-box;
     display: flex;
@@ -367,7 +368,7 @@ label.switch {
     height: 23px;
     padding-left: 5em;
     cursor: pointer;
-    color: #fff;
+    color: rgb(255, 255, 255)172, 172, 172);
 }
 
 li:nth-child(2) a,
@@ -401,7 +402,7 @@ label.switch {
     width: 15px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: greenyellow;
     -webkit-transition: .4s;
     transition: .4s;
 }
