@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="en">
 
 <head>
-	<title>Clear login Form Responsive Widget Template :: w3layouts</title>
+	<title>Login do Sistema</title>
 	<!-- Meta-Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -35,22 +35,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-	<h1>Clear login Form </h1>
+	<h1>Login </h1>
 	<div class="w3ls-login box box--big">
 		<!-- form starts here -->
-		<form action="#" method="post">
+		<form action="api/api.php" method="post">
 			<div class="agile-field-txt">
 				<label>
-					<i class="fa fa-user" aria-hidden="true"></i> Username </label>
-				<input type="text" name="name" placeholder="Enter your name " required="" />
+					<i class="fa fa-user" aria-hidden="true"></i> Usuário </label>
+				<input type="text" name="matricula" placeholder="Digite seu nome " required="" />
+				<input type="text" name="requisicao" type = 'hidden' value = 'login' placeholder="Digite seu nome " required="" />
+
 			</div>
 			<div class="agile-field-txt">
 				<label>
-					<i class="fa fa-envelope" aria-hidden="true"></i> password </label>
-				<input type="password" name="password" placeholder="Enter your password " required="" id="myInput" />
+					<i class="fa fa-envelope" aria-hidden="true"></i> senha </label>
+				<input type="password" name="senha" placeholder="Digite sua senha " required="" id="myInput" />
 				<div class="agile_label">
 					<input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
-					<label class="check" for="check3">Show password</label>
+					<label class="check" for="check3">Mostrar senha</label>
 				</div>
 			</div>
 			<!-- script for show password -->
@@ -70,7 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
-						keep me signed in
+						matenha-me conectado
 					</label>
 				</div>
 				<div class="form-end">
