@@ -227,7 +227,7 @@ body {
     -ms-background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    background-color: #999;
+    background-color: white;
 }
 
 .w3ls-login {
@@ -249,7 +249,7 @@ body {
 h1 {
     font-size: 3.2em;
     text-transform: capitalize;
-    color: #fff;
+    color:grey;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: 3px;
     margin: .8em 1vw;
@@ -262,7 +262,7 @@ h1 {
     border-radius: 8px;
     background: transparent;
     padding: 3.5vw;
-    border: solid rgb(221, 23, 23);
+    border: solid #636c76;
     border-width: 5px;
     box-sizing: border-box;
     display: flex;
@@ -272,7 +272,7 @@ h1 {
 
 .w3ls-login label {
     font-size: 14px;
-    color: #fff;
+    color: #636c76;
     float: left;
     text-align: left;
     margin-bottom: 5px;
@@ -290,7 +290,7 @@ h1 {
 .w3ls-login label i {
     font-size: 1.1em;
     margin-right: 3px;
-    color: #fd5c63;
+    color: #636c76;
 }
 
 .w3ls-login input[type="text"],
@@ -337,8 +337,8 @@ label.check {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    border: 2px solid #fd5c63;
-    background: #fd5c63;
+    border: 3px solid #009137;
+    background:#009137;
     color: #fff;
 	margin-top:1em;
     outline: none;
@@ -347,17 +347,79 @@ label.check {
     -moz-transition: 0.5s all ease;
     -o-transition: 0.5s all ease;
     -ms-transition: 0.5s all ease;
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .w3ls-login input[type=submit]:hover {
     background: transparent;
-	border: 2px solid #fff;
+	border: 3px solid #009137;
+    color: #009137;
+}
+.w3ls-login input[type=button] {
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    border: 3px solid #0e2944;
+    background:#0e2944;
     color: #fff;
+	margin-top:1em;
+    outline: none;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    font-family: 'Poppins', sans-serif;
 }
 
+.w3ls-login input[type=button]:hover {
+    background: transparent;
+	border: 3px solid #0e2944;
+    color: #0e2944;
+}
 .w3ls-bot {
     width: 100%;
+}
+
+.err {
+    color: red;
+    font-weight: bold;
+}
+
+.content {
+    margin: 30px;
+}
+
+.row {
+    margin: 0!important;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.margin-top {
+    margin-top:20px!important;
+}
+
+.margin-bottom {
+    margin-bottom:20px;
+}
+
+.bg-color {
+    background-color: #415c77!important;
+}
+
+.bg-color a, .bg-color h3 {
+    color: white!important;
+}
+
+.bg-color a:hover {
+    font-weight: bold;
 }
 
 /* switch */
@@ -368,14 +430,7 @@ label.switch {
     height: 23px;
     padding-left: 5em;
     cursor: pointer;
-    color: rgb(255, 255, 255)172, 172, 172);
-}
-
-li:nth-child(2) a,
-label.switch {
-    text-transform: capitalize;
-    font-size: 14px;
-    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
 }
 
 .switch input {
@@ -456,7 +511,7 @@ input:checked+.slider:before {
 }
 
 .copy-wthree p a {
-    color: #fd5c63;
+    color: #636c76;
     transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -474,7 +529,7 @@ input:checked+.slider:before {
 
 @media(max-width:1920px) {
     h1 {
-        font-size: 3.5vw;
+        font-size: 2.8vw;
     }
 }
 

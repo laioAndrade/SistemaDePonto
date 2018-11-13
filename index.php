@@ -4,11 +4,17 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
+
+<?php
+	$msg = isset($_GET['err']) ? "Usuário ou senha inválidos." : "";
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-	<title>Login do Sistema</title>
+	<title>Sistema de Ponto - Login</title>
 	<!-- Meta-Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -26,6 +32,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- Stylesheets -->
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+  
+	<script type = "text/javascript" src = "js/functions.js"></script>
 	<!--// Stylesheets -->
 	<!--fonts-->
 	<!-- title -->
@@ -35,21 +47,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-	<h1>Login </h1>
+	<h3 class = 'err'><?= $msg ?></h3>
+	<h1>Sistema de Pontos </h1>
 	<div class="w3ls-login box box--big">
 		<!-- form starts here -->
 		<form action="API/api.php" method="post">
 			<div class="agile-field-txt">
 				<label>
-					<i class="fa fa-user" aria-hidden="true"></i> Usuário </label>
-				<input type="text" name="matricula" placeholder="Digite seu nome " required="" />
-				<input  name="requisicao" type = 'hidden' value = 'login' placeholder="Digite seu nome " required="" />
+				<i class="fa fa-user" aria-hidden="true"></i> Matrícula </label>
+				<input id = 'matricula' type="text" name="matricula" placeholder="Digite sua matrícula " required="" />
+				<input type="hidden" name="requisicao" value = "login" />
 
 			</div>
 			<div class="agile-field-txt">
 				<label>
-					<i class="fa fa-envelope" aria-hidden="true"></i> senha </label>
-				<input type="password" name="senha" placeholder="Digite sua senha " required="" id="myInput" />
+				<i class="fa fa-envelope" aria-hidden="true"></i> senha </label>
+				<input id = 'senha' type="password" name="senha" placeholder="Digite sua senha " required="" id="myInput" />
 				<div class="agile_label">
 					<input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
 					<label class="check" for="check3">Mostrar senha</label>
@@ -69,14 +82,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- //script ends here -->
 			<div class="w3ls-bot">
 				<div class="switch-agileits">
-					<label class="switch">
-						<input type="checkbox">
-						<span class="slider round"></span>
-						matenha-me conectado
-					</label>
 				</div>
 				<div class="form-end">
 					<input type="submit" value="LOGIN">
+				</div>
+				<div class="form-end">
+					<input id = 'ponto' type="button" value="PONTO">
 				</div>
 				<div class="clearfix"></div>
 			</div>
